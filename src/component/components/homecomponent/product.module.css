@@ -15,7 +15,7 @@
 
 .productCards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -35,7 +35,6 @@
   height: 350px;
 }
 
-/* Image wrapper for badge overlay */
 .imageWrapper {
   position: relative;
   width: 100%;
