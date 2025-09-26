@@ -33,7 +33,6 @@
   color: #fff8f8;
   display: inline-block;
   font-size: 60px;
-  margin-left: 150px;
 }
 
 .hero p {
@@ -45,7 +44,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 150px;
 }
 
 #herocontent {
@@ -55,13 +53,11 @@
 .heroButtons {
   margin-top: 20px; /* smaller gap below p */
   display: flex;
-  justify-content: flex-start; /* align to left */
+  justify-content: flex-start;
+  align-items: center; /* align to left */
   gap: 20px;
 }
 .heroPrimary {
-  margin-top: 10px;
-  padding: 8px 14px;
-  margin-left: 6px;
   background: #063beb;
   color: #fff;
   border: none;
@@ -73,7 +69,6 @@
   align-items: center;
   justify-content: center;
   gap: 8px; /* space between icon and text */
-  margin-left: 150px;
 }
 
 .heroPrimary:hover {
@@ -91,7 +86,6 @@
   transition: background 0.3s ease;
   white-space: nowrap;
   word-wrap: wrap;
-  margin-top: 10px;
 }
 
 .heroSecondary:hover {
