@@ -14,7 +14,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer style={{ backgroundColor: "white" }}>
+    <footer style={{ backgroundColor: "black", display: "flex" }}>
       <Container>
         <div className={styles.divone}>
           <div className={styles.divhorizontal}>
@@ -68,9 +68,8 @@ const Footer: React.FC = () => {
               support@ecommerce.com
             </p>
           </div>
-          <hr className={styles.footerLine} />
         </div>
-
+        <hr className={styles.footerLine} />
         <div className={styles.divtwo}>
           <p>© 2024 ECommerce. All rights reserved.</p>
           <div className={styles.terms}>
