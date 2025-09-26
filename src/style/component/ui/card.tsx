@@ -8,7 +8,7 @@ type CardProps = {
   children?: React.ReactNode;
   className?: string;
 };
-/* Main file */
+
 const Card: React.FC<CardProps> = ({
   title,
   description,
