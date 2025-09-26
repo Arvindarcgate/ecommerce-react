@@ -6,21 +6,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   font-family: Arial, sans-serif;
-  height: 180px;
-}
-
-.divhorizontal,
-.links,
-.customerService,
-.contactus {
-  flex: 1;
-  min-width: 200px;
-  margin: 0 60px 0 10px;
-}
-
-.divhorizontal {
-  margin-left: 160px;
-  gap: 5px;
+  height: 200px;
 }
 
 .divone h4 {
@@ -40,8 +26,6 @@
 .contactus {
   display: flex;
   flex-direction: column;
-
-  margin-right: 150px;
 }
 
 .iconMapPin {
@@ -67,9 +51,7 @@
   height: 1px;
   color: #f1f1f1;
   background-color: #f7f4f4;
-  width: 73%;
-
-  margin: 14px auto;
+  width: 100%;
 }
 
 .divtwo {
@@ -79,17 +61,17 @@
   align-items: center;
   padding: 0px 0;
   background-color: #000000;
-  height: 80px;
 }
 
 .divtwo p {
   font-size: 14px;
   color: #ccc;
-  margin-left: 250px;
 }
 
 .terms {
   display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .terms p {
@@ -97,7 +79,9 @@
   cursor: pointer;
   transition: color 0.3s ease;
   white-space: nowrap;
-  margin-right: 70px;
+  justify-content: space-between;
+  display: flex;
+  gap: 5px;
 }
 
 .terms p:hover {
