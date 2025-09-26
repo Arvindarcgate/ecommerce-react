@@ -134,8 +134,9 @@
   transition: background 0.3s, transform 0.3s;
   width: 220px;
   text-align: center;
-  margin-top: 50px;
-  margin-left: 750px;
+
+  display: flex;
+  justify-content: center;
 }
 
 .bottomproduct:hover {
