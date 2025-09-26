@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Card.css"; // external CSS file
 
@@ -9,8 +8,14 @@ type CardProps = {
   children?: React.ReactNode;
   className?: string;
 };
-
-const Card: React.FC<CardProps> = ({ title, description, image, children, className }) => {
+/* Main file */
+const Card: React.FC<CardProps> = ({
+  title,
+  description,
+  image,
+  children,
+  className,
+}) => {
   return (
     <div className={`card ${className || ""}`}>
       {image && <img src={image} alt={title} className="card-img" />}
