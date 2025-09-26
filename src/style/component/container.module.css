@@ -1,0 +1,9 @@
+.container {
+  padding-left: 20px;
+  padding-right: 10px;
+  max-width: 1750px;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+  margin: auto;
+}
