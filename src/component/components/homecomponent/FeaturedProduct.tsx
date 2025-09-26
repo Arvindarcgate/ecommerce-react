@@ -105,9 +105,18 @@ const FeaturedProducts: React.FC = () => {
           ))}
         </div>
 
-        <button className={styles.bottomproduct}>
-          View All Products <MoveRight size={18} />
-        </button>
+        <div
+          style={{
+            display: "Flex",
+            alignItems: "center",
+            justifyContent: "center",
+            paddingTop: "24px",
+          }}
+        >
+          <button className={styles.bottomproduct}>
+            View All Products <MoveRight size={18} />
+          </button>
+        </div>
       </Container>
     </div>
   );
