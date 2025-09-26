@@ -1,0 +1,64 @@
+.feature {
+  flex: 1;
+  min-width: 150px;
+  max-width: 400px;
+  padding: 20px;
+  transition: all 0.3s ease; /* smooth animation */
+  border: 1px solid transparent; /* default: no visible border */
+  border-radius: 10px;
+  box-shadow: none; /* default: no shadow */
+  background-color: #fff; /* clean card look */
+  cursor: pointer;
+  gap: 5px;
+  text-align: center;
+}
+
+.feature:hover {
+  border: 1px solid #ffffff; /* white border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* elevated shadow */
+  transform: translateY(-5px); /* slight lift */
+}
+
+.feature h4 {
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.feature p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Common styling for all icons */
+.feature svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* Blue icon */
+.icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  align-items: center;
+  margin: auto;
+}
+
+.icon1 {
+  background-color: #8bb0f3;
+  color: #2563eb;
+}
+
+.icon2 {
+  background-color: #a0f3a3;
+  color: #16a34a;
+}
+
+.icon3 {
+  background-color: #e99cb5;
+  color: #9333ea;
+}
