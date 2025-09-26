@@ -83,7 +83,6 @@
 }
 
 .divtwo p {
-  margin: 0px;
   font-size: 14px;
   color: #ccc;
   margin-left: 250px;
@@ -91,8 +90,6 @@
 
 .terms {
   display: flex;
-
-  gap: 1px;
 }
 
 .terms p {
@@ -100,7 +97,7 @@
   cursor: pointer;
   transition: color 0.3s ease;
   white-space: nowrap;
-  margin-right: 150px;
+  margin-right: 70px;
 }
 
 .terms p:hover {
