@@ -1,12 +1,13 @@
+/* Footer Top Section */
 .divone {
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
   padding: 60px 30px;
   display: flex;
+  flex-wrap: wrap; /* allows items to wrap on small screens */
   justify-content: space-between;
-  flex-wrap: wrap;
   font-family: Arial, sans-serif;
-  height: 200px;
+  gap: 20px; /* spacing between items */
 }
 
 .divone h4 {
@@ -22,12 +23,19 @@
   color: #ddd;
 }
 
-/* ===== Contact Section ===== */
+/* Contact / Icon Section */
 .contactus {
   display: flex;
   flex-direction: column;
 }
 
+.iconsocial {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Icon Colors */
 .iconMapPin {
   color: rgb(4, 99, 241);
 }
@@ -40,37 +48,36 @@
   color: rgb(255, 50, 255);
 }
 
-.iconsocial {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-}
-
+/* Divider Line */
 .footerLine {
   border: 0;
   height: 1px;
   color: #f1f1f1;
   background-color: #f7f4f4;
   width: 100%;
+  margin: 20px 0;
 }
 
+/* Footer Bottom Section */
 .divtwo {
-  margin-top: 0px;
   display: flex;
+  flex-wrap: wrap; /* allow items to stack on small screens */
   justify-content: space-between;
   align-items: center;
-  padding: 0px 0;
-  background-color: #000000;
+  padding: 10px 30px;
+  background-color: #000;
+  gap: 10px;
 }
 
 .divtwo p {
   font-size: 14px;
   color: #ccc;
+  margin: 5px 0;
 }
 
 .terms {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* wrap terms on small screens */
   gap: 15px;
 }
 
@@ -79,11 +86,49 @@
   cursor: pointer;
   transition: color 0.3s ease;
   white-space: nowrap;
-  justify-content: space-between;
-  display: flex;
-  gap: 5px;
 }
 
 .terms p:hover {
   color: #fff;
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media (max-width: 768px) {
+  .divone {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: flex-start;
+  }
+
+  .divtwo {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .terms {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .divone h4 {
+    font-size: 16px;
+  }
+
+  .divone p,
+  .divtwo p {
+    font-size: 12px;
+  }
+
+  .iconsocial {
+    gap: 10px;
+  }
+
+  .terms {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
