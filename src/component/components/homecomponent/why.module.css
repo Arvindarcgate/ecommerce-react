@@ -1,20 +1,15 @@
 .why {
-  /* background-color: #ffff;
-  height: 530px;
-  margin-top: 0px;
-  padding-top: 80px;
-  box-sizing: border-box; */
-
   width: 100%;
   display: block;
   margin-bottom: 60px;
+  height: auto;
 }
 
 .whyFeatures {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 0px;
+  margin-top: 20px;
   flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +20,7 @@
   font-size: 2rem;
   color: #000000f3;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .sectionTitle h3 {

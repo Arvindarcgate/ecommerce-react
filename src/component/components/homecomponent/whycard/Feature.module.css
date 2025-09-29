@@ -1,5 +1,5 @@
 .feature {
-  flex: 1 1 calc(33.333% - 20px); /* 3 per row by default */
+  flex: 1 1 calc(33.333% - 20px);
   min-width: 250px;
   max-width: 350px;
   padding: 20px;
