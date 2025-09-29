@@ -1,7 +1,12 @@
 .products {
   background-color: #dadada;
-  height: 750px;
+  padding: 80px 0;
+  min-height: 750px;
+  clear: both; /* ✅ Forces it to sit below floated/flex elements */
+  width: 100%; /* ✅ Ensures it's treated as full block */
+  display: block; /* ✅ Explicit block container */
 }
+
 .products h1 {
   text-align: center;
   padding-top: 80px;

@@ -19,7 +19,6 @@ const Feature: React.FC<FeatureProps> = ({
       <div className={`${styles.icon} ${iconClass ? styles[iconClass] : ""}`}>
         {icon}
       </div>
-
       <h4>{title}</h4>
       <p>{description}</p>
     </div>

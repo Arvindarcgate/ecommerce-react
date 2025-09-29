@@ -1,9 +1,13 @@
 .why {
-  background-color: #ffff;
+  /* background-color: #ffff;
   height: 530px;
   margin-top: 0px;
   padding-top: 80px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+
+  width: 100%;
+  display: block;
+  margin-bottom: 60px;
 }
 
 .whyFeatures {
@@ -12,13 +16,16 @@
   gap: 10px;
   margin-top: 0px;
   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sectionTitle {
   font-size: 2rem;
   color: #000000f3;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .sectionTitle h3 {
@@ -37,11 +44,11 @@
   max-width: 400px;
   padding: 20px;
 
-  transition: all 0.3s ease; /* smooth animation */
-  border: 1px solid transparent; /* default: no visible border */
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
   border-radius: 10px;
-  box-shadow: none; /* default: no shadow */
-  background-color: #fff; /* clean card look */
+  box-shadow: none;
+  background-color: #fff;
   cursor: pointer;
   gap: 5px;
 }

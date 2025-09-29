@@ -62,7 +62,7 @@
   color: #fff;
   border: none;
   width: 150px; /* matches card width */
-  border-radius: 24px;
+  border-radius: 16px;
   cursor: pointer;
   transition: background 0.3s;
   display: flex;
@@ -77,15 +77,18 @@
 
 .heroSecondary {
   color: #fffdfd;
+  align-items: center;
+  justify-content: center;
   max-width: 180px;
-  height: 40px;
-  padding: 10px 18px;
+  height: 48px;
+
   border: none;
   border-radius: 12px;
   cursor: pointer;
   transition: background 0.3s ease;
   white-space: nowrap;
   word-wrap: wrap;
+  background-color: #ffffff1a;
 }
 
 .heroSecondary:hover {
