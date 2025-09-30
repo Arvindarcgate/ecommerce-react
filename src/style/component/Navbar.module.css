@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 188px;
+  gap: 178px;
 }
 
 .navright {
@@ -126,8 +126,8 @@
   background: none;
   cursor: pointer;
   color: #000000;
-  font-weight: 500;
-  text-decoration: none; /* For Link */
+  font-weight: 100;
+  text-decoration: none;
 }
 
 .cartBtn {

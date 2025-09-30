@@ -4,10 +4,10 @@
   color: #fff;
   padding: 30px 30px;
   display: flex;
-  flex-wrap: wrap; /* allows items to wrap on small screens */
+  flex-wrap: wrap;
   justify-content: space-between;
   font-family: Arial, sans-serif;
-  gap: 20px; /* spacing between items */
+  gap: 20px;
 }
 
 .divone h4 {
@@ -31,13 +31,14 @@
 .contactus p {
   display: flex;
   align-items: center;
-  gap: 6px; /* space between icon and text */
-  margin: 4px 0; /* optional: tighten spacing */
+  gap: 6px;
+  margin: 4px 0;
 }
 
 .iconsocial {
   display: flex;
   gap: 15px;
+  margin-top: 15px;
 }
 
 /* Icon Colors */
@@ -66,7 +67,7 @@
 /* Footer Bottom Section */
 .divtwo {
   display: flex;
-  flex-wrap: wrap; /* allow items to stack on small screens */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 30px 30px;
@@ -82,7 +83,7 @@
 
 .terms {
   display: flex;
-  flex-wrap: wrap; /* wrap terms on small screens */
+  flex-wrap: wrap;
   gap: 15px;
 }
 

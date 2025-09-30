@@ -17,7 +17,8 @@ const Hero: React.FC = () => {
           </p>
           <div className={styles.heroButtons}>
             <button className={styles.heroPrimary}>
-              Shop Now <ArrowRight />
+              Shop Now
+              <ArrowRight />
             </button>
             <button className={styles.heroSecondary}>Browse Products</button>
           </div>
