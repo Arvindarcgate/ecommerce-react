@@ -1,30 +1,126 @@
-// src/components/Navbar.tsx
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import styles from "../style/component/Navbar.module.css"; // CSS Module
+import { ShoppingCart, User, Search, Menu, X, LogOut } from "lucide-react";
+import styles from "../style/component/Navbar.module.css";
+import Container from "../style/component/ui/Container";
 
 const Navbar: React.FC = () => {
-  const location = useLocation(); // ✅ use hook to get current path
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const location = useLocation();
 
-  const links = [
-    { to: "/", label: "Home" },
-    { to: "/product", label: "Product" },
-    { to: "/contact", label: "Contact" },
+  const user = null;
+
+  const navigation = [
+    { name: "Home", href: "/" },
+    { name: "Products", href: "/products" },
+    { name: "Contact", href: "/contact" },
   ];
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className={styles.navbar}>
-      {links.map((link) => (
-        <Link
-          key={link.to}
-          to={link.to}
-          className={`${styles.navLink} ${
-            location.pathname === link.to ? styles.active : ""
-          }`}
-        >
-          {link.label}
-        </Link>
-      ))}
+      <Container>
+        <div className={styles.navContainer}>
+          <div className={styles.navleft}>
+            <Link to="/" className={styles.logo}>
+              <div className={styles.logoIcon}>E</div>
+              <span className={styles.logoText}>ECommerce</span>
+            </Link>
+
+            <div className={styles.navLinks}>
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`${styles.navLink} ${
+                    isActive(item.href) ? styles.active : ""
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.navright}>
+            <div className={styles.searchBar}>
+              <Search className={styles.searchIcon} />
+              <input
+                type="text"
+                placeholder="    Search products..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className={styles.searchInput}
+              />
+            </div>
+
+            <div className={styles.actions}>
+              {user ? (
+                <>
+                  <span className={styles.userText}>Welcome, User</span>
+                  <button className={styles.logoutBtn}>
+                    <LogOut /> Logout
+                  </button>
+                </>
+              ) : (
+                <Link to="/login" className={styles.loginBtn}>
+                  <User /> Login
+                </Link>
+              )}
+
+              <Link to="/cart" className={styles.cartBtn}>
+                <ShoppingCart />
+              </Link>
+            </div>
+
+            {/* Mobile Menu Toggle */}
+            <button
+              className={styles.mobileToggle}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X /> : <Menu />}
+            </button>
+          </div>
+        </div>
+
+        {/* MOBILE DROPDOWN MENU (only visible when open) */}
+        {isMobileMenuOpen && (
+          <div className={styles.mobileMenu}>
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={styles.mobileNavLink}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+
+            <div className={styles.mobileSearch}>
+              <Search className={styles.searchIcon} />
+              <input
+                type="text"
+                placeholder="Search products..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+            </div>
+
+            {user ? (
+              <button className={styles.logoutBtn}>
+                <LogOut /> Logout
+              </button>
+            ) : (
+              <Link to="/login" className={styles.mobileNavLink}>
+                <User /> Login
+              </Link>
+            )}
+          </div>
+        )}
+      </Container>
     </nav>
   );
 };
