@@ -56,15 +56,15 @@ const Footer: React.FC = () => {
           <div className={styles.contactus}>
             <h4>Contact Us</h4>
             <p>
-              <MapPin className={styles.iconMapPin} /> Location: 123 Commerce{" "}
-              <br />
-              St, Business District, NY 10001
+              <MapPin className={styles.iconMapPin} size={14} />
+              Location: 123 Commerce St, Business District, NY 10001
             </p>
             <p>
-              <Phone className={styles.iconphone} size={19} /> +1 (555) 123-4567
+              <Phone className={styles.iconphone} size={16} />
+              +1 (555) 123-4567
             </p>
             <p>
-              <Mail className={styles.iconMail} size={19} />{" "}
+              <Mail className={styles.iconMail} size={14} />
               support@ecommerce.com
             </p>
           </div>

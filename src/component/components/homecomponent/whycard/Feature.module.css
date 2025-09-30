@@ -63,6 +63,17 @@
   background-color: #e99cb5;
   color: #9333ea;
 }
+.feature:hover .icon1 {
+  background-color: #4276e4;
+}
+
+.feature:hover .icon2 {
+  background-color: #50ec89;
+}
+
+.feature:hover .icon3 {
+  background-color: #ad687f;
+}
 
 @media (max-width: 768px) {
   .feature {

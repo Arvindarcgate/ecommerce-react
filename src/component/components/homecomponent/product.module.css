@@ -154,7 +154,7 @@
   transition: background 0.3s, transform 0.3s;
   width: 220px;
   text-align: center;
-
+  margin-top: 25px;
   display: flex;
   justify-content: center;
 }
