@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
               <Search className={styles.searchIcon} />
               <input
                 type="text"
-                placeholder="    Search products..."
+                placeholder="Search products..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className={styles.searchInput}

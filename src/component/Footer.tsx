@@ -25,13 +25,10 @@ const Footer: React.FC = () => {
               satisfaction delivered.
             </p>
             <div className={styles.iconsocial}>
-              <Facebook />
-
-              <Twitter />
-
-              <Instagram />
-
-              <Youtube />
+              <Facebook data-testid="icon-facebook" />
+              <Twitter data-testid="icon-twitter" />
+              <Instagram data-testid="icon-instagram" />
+              <Youtube data-testid="icon-youtube" />
             </div>
           </div>
 
