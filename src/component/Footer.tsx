@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
 
           <div className={styles.customerService}>
             <h4>Customer Services</h4>
-            <p>F & Q</p>
+            <p>F&Q</p>
             <p>Shipping Info</p>
             <p>Returns</p>
             <p>Size Guide</p>
