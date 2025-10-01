@@ -1,4 +1,3 @@
-// src/components/Navbar.test.tsx
 import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
@@ -31,25 +30,21 @@ describe("Navbar Component", () => {
     expect(searchInput).toHaveValue("Headphones");
   });
 
-  test("renders login and cart buttons when user is null", () => {
+  test("render login and cart buttons when user is null", () => {
     expect(screen.getByText(/Login/i)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "" })).toBeInTheDocument();
   });
 
   test("toggles mobile menu when button is clicked", () => {
     const toggleButton = screen.getByRole("button", { name: "" });
-
     fireEvent.click(toggleButton);
 
-    // After clicking, mobile menu links should appear
     ["Home", "Products", "Contact", "Login"].forEach((item) => {
       expect(screen.getAllByText(item)[0]).toBeInTheDocument();
     });
 
-    // Close mobile menu
     fireEvent.click(toggleButton);
     ["Home", "Products", "Contact", "Login"].forEach((item) => {
-      // The mobile menu links may still exist in DOM but not visible; skip visibility check for simplicity
       expect(screen.getAllByText(item)[0]).toBeInTheDocument();
     });
   });
