@@ -1,7 +1,7 @@
 import React from "react"; // Only needed for older React, but harmless
 import { render, screen } from "@testing-library/react";
 import Hero from "./Hero";
-import "@testing-library/jest-dom"; // Optional if jest.setup.ts already imports it
+import "@testing-library/jest-dom";
 
 describe("Hero Component", () => {
   test("renders heading correctly", () => {
