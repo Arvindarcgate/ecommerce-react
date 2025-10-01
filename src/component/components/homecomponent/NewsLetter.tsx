@@ -11,7 +11,7 @@ const Newsletter: React.FC = () => {
         <p>
           Subscribe to our newsletter and be the first to know about new
           products, exclusive deals, and special offers.
-        </p>
+        </p>    
         <div className={styles.form}>
           <input
             className={styles.newsmail}
